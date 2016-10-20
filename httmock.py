@@ -156,7 +156,7 @@ class HTTMock(object):
                     response = history.pop()
                     response.history = tuple(history)
 
-                return response
+            return response
 
             return self._real_session_send(session, request, **kwargs)
 
